@@ -112,7 +112,7 @@ body {
 
 /* Basketball Theme for Projects */
 .projects-section {
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23c41e3a" width="1200" height="800"/><path fill="%23003087" opacity="0.3" d="M0 400h600v400H0z"/><path fill="%23003087" opacity="0.3" d="M600 0h600v400H600z"/></svg>') center/cover;
+    background: url("medias/court.png") center/cover;
 }
 
 /* IBM Z Mainframe Theme for Work Experience */
