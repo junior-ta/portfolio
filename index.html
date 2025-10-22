@@ -15,7 +15,7 @@
         <p class="tagline">[Learn more about me at the bottom of the page]</p>
     </div>
 
-    <!-- ===== NAVIGATION ===== -->
+    <!-- ===== NAVIGATION X===== -->
     <div class="nav-container">
         <button class="nav-btn active" onclick="showPage('projects')">Projects</button>
         <button class="nav-btn" onclick="showPage('work')">Work experience</button>
@@ -29,64 +29,164 @@
         <!-- Filter buttons - modify tags as needed -->
         <div class="filter-section">
             <button class="filter-btn active" onclick="filterItems('projects', 'all')">All</button>
-            <button class="filter-btn" onclick="filterItems('projects', 'ML/AI')">ML/AI</button>
+            <button class="filter-btn" onclick="filterItems('projects', 'AI')">AI</button>
             <button class="filter-btn" onclick="filterItems('projects', 'Frontend')">Frontend</button>
             <button class="filter-btn" onclick="filterItems('projects', 'Backend')">Backend</button>
-            <button class="filter-btn" onclick="filterItems('projects', 'Computer Vision')">Computer Vision</button>
-            <button class="filter-btn" onclick="filterItems('projects', 'Health')">Health</button>
+            <button class="filter-btn" onclick="filterItems('projects', 'Python')">Python</button>
+            <button class="filter-btn" onclick="filterItems('projects', 'C')">C</button>
+            <button class="filter-btn" onclick="filterItems('projects', 'Java')">Java</button>
+            <button class="filter-btn" onclick="filterItems('projects', 'SQL')">SQL</button>
+            <button class="filter-btn" onclick="filterItems('projects', 'HTML / CSS')">HTML/CSS</button>
+            <button class="filter-btn" onclick="filterItems('projects', 'JavaScript')">JavaScript</button>
             <button class="filter-btn" onclick="filterItems('projects', 'Sports')">Sports</button>
+            <button class="filter-btn" onclick="filterItems('projects', 'Health')">Health</button>
         </div>
 
         <div class="cards-grid" id="projects-grid">
             <!-- SAMPLE PROJECT CARD - Duplicate and modify for your projects -->
-            <div class="card" data-tags="ML/AI,Sports,Python">
-                <div class="card-image">🏀</div>
+            <div class="card" data-tags="AI, Sports, Python, Frontend">
+                <div class="card-image">🏀📊</div>
                 <div class="card-content">
-                    <h3 class="card-title">Basketball Analytics AI</h3>
-                    <p class="card-description">Machine learning model that predicts player performance based on historical game data.</p>
+                    <h3 class="card-title">My NBA Dataground</h3>
+                    <p class="card-description">a Streamlit app with dynamic navigation and routing, featuring 5+ interactive data visualizations dashboards.</p>
                     <div class="card-tags">
-                        <span class="tag">ML/AI</span>
+                        <span class="tag">AI</span>
                         <span class="tag">Sports</span>
                         <span class="tag">Python</span>
+                        <span class="tag">Frontend</span>
                     </div>
-                    <a href="#" class="read-more">read more</a>
+                    <a href="https://my-nba-data-analysis-portfolio.streamlit.app/" class="read-more">Open dashboard</a>
+                </div>
+            </div>
+
+            <div class="card" data-tags="Frontend, Backend, HTML/CSS, JavaScript, SQL">
+                <div class="card-image"><img src="medias/dishout.png" alt="Description of the image">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">DishOut</h3>
+                    <p class="card-description"> The Student Marketplace For The Students By The Students.</p>
+                    <div class="card-tags">
+                        <span class="tag">Frontend</span>
+                        <span class="tag">Backend</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                    <a href="https://aptitude.cse.buffalo.edu/CSE442/2025-Fall/cse-442o/" class="read-more">Open</a>
+                </div>
+            </div>
+
+            <div class="card" data-tags="Health, AI">
+                <div class="card-image">👨🏿‍⚕️</div>
+                <div class="card-content">
+                    <h3 class="card-title">Got You!</h3>
+                    <p class="card-description"> The best tailored preventive healthcare AI agent.</p>
+                    <div class="card-tags">
+                        <span class="tag">Health</span>
+                        <span class="tag">AI</span>
+                    </div>
+                    <a href="#" class="read-more">Upcoming</a>
                 </div>
             </div>
 
             <!-- Add more project cards here following the same structure -->
-            <div class="card" data-tags="Frontend,JS,HTML/CSS">
-                <div class="card-image">💻</div>
+            <div class="card" data-tags="AI, Sports, Python">
+                <div class="card-image">🏀📊</div>
                 <div class="card-content">
-                    <h3 class="card-title">Sample Frontend Project</h3>
-                    <p class="card-description">Description of your frontend project goes here.</p>
+                    <h3 class="card-title">NBA Excitment index</h3>
+                    <p class="card-description">Trying to develop an index to predict how exciting an NBA game will be.</p>
                     <div class="card-tags">
-                        <span class="tag">Frontend</span>
-                        <span class="tag">JS</span>
-                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">AI</span>
+                        <span class="tag">Sports</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <a href="https://my-nba-data-analysis-portfolio.streamlit.app/" class="read-more">Repo</a>
+                </div>
+            </div>
+
+            <div class="card" data-tags="C">
+                <div class="card-image">💬📲</div>
+                <div class="card-content">
+                    <h3 class="card-title">Instant Messenger</h3>
+                    <p class="card-description">  An instant messaging application allows users to communicate via text messages in real time.</p>
+                    <div class="card-tags">
+                        <span class="tag">C</span>
                     </div>
                     <a href="#" class="read-more">read more</a>
                 </div>
             </div>
 
-            <div class="card" data-tags="Backend,SQL,Python">
-                <div class="card-image">🗄️</div>
+            <div class="card" data-tags="C">
+                <div class="card-image">💾</div>
                 <div class="card-content">
-                    <h3 class="card-title">Database Management System</h3>
-                    <p class="card-description">Backend system for managing complex database operations.</p>
+                    <h3 class="card-title">Memory Allocator</h3>
+                    <p class="card-description"> a dynamic memory allocator suitable for replacing malloc() for heap memory in a Unix process.</p>
                     <div class="card-tags">
-                        <span class="tag">Backend</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">Python</span>
+                        <span class="tag">C</span>
                     </div>
                     <a href="#" class="read-more">read more</a>
                 </div>
             </div>
+
+            <div class="card" data-tags="AI, Python, Health">
+                <div class="card-image">📈😷</div>
+                <div class="card-content">
+                    <h3 class="card-title">Model for diabetes detection</h3>
+                    <p class="card-description">  I achieved:
+                        Mean Accuracy: 0.761 ± 0.037
+                        Mean ROC Area under the curve: 0.812 ± 0.062.</p>
+                    <div class="card-tags">
+                        <span class="tag">AI</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Health</span>
+                    </div>
+                    <a href="https://github.com/junior-ta/NNmodel-diabetes-detection" class="read-more">Repo</a>
+                </div>
+            </div>
+
+            <div class="card" data-tags="Sports">
+                <div class="card-image">🏀</div>
+                <div class="card-content">
+                    <h3 class="card-title">Blog Article</h3>
+                    <p class="card-description">Ja Morant et Brandon Clarke, le duo le plus ‘flashy’ de la ligue ?.</p>
+                    <div class="card-tags">
+                        <span class="tag">Sports</span>
+                    </div>
+                    <a href="https://clutchtime.fr/ja-morant-et-brandon-clarke-le-duo-le-plus-flashy-de-la-ligue/" class="read-more">Read</a>
+                </div>
+            </div>
+
+            <div class="card" data-tags="Sports">
+                <div class="card-image">🏀</div>
+                <div class="card-content">
+                    <h3 class="card-title">Blog Article</h3>
+                    <p class="card-description">Matisse Thybulle, Le Diamant À Polir Des 76ers.</p>
+                    <div class="card-tags">
+                        <span class="tag">Sports</span>
+                    </div>
+                    <a href="https://clutchtime.fr/matisse-thybulle-le-diamant-a-polir-des-76ers/" class="read-more">Read</a>
+                </div>
+            </div>
+
+            <div class="card" data-tags="Sports">
+                <div class="card-image">🏀</div>
+                <div class="card-content">
+                    <h3 class="card-title">Blog Article</h3>
+                    <p class="card-description">Une nouvelle lineup pour les 76ers, Brown tente le tout pour le tout.</p>
+                    <div class="card-tags">
+                        <span class="tag">Sports</span>
+                    </div>
+                    <a href="https://clutchtime.fr/une-nouvelle-lineup-pour-les-76ers-brown-tente-le-tout-pour-le-tout/" class="read-more">Read</a>
+                </div>
+            </div>
+
+            
 
             <!-- Copy this card structure for all your projects -->
         </div>
     </div>
 
-    <!-- ===== WORK EXPERIENCE PAGE (IBM Z Mainframe Theme) ===== -->
+    <!-- ===== WORK EXPERIENCE PAGE (IBM Z Mainframe Theme) X===== -->
     <div id="work" class="page-section work-section">
         <div class="filter-section">
             <button class="filter-btn active" onclick="filterItems('work', 'all')">All</button>
@@ -184,7 +284,7 @@
         </div>
     </div>
 
-    <!-- ===== RESUME & SKILLS PAGE (Anime Theme) ===== -->
+    <!-- ===== RESUME & SKILLS PAGE (Anime Theme) X===== -->
     <div id="resume" class="page-section resume-section">
         <div class="cards-grid" id="resume-grid">
             <!-- RESUME/SKILLS CARDS -->
