@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JT - Portfolio</title>
+      <link rel="stylesheet" href="source.css">
+</head>
+<body>
+    <!-- ===== HEADER SECTION ===== -->
+    <div class="header">
+        <h1>Hello, I'm JT</h1>
+        <p>(Junior Tadiffo but IM trying to aura farm)</p>
+        <p class="tagline">[Learn more about me at the bottom of the page]</p>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <div class="nav-container">
+        <button class="nav-btn active" onclick="showPage('projects')">Projects</button>
+        <button class="nav-btn" onclick="showPage('work')">Work experience</button>
+        <button class="nav-btn" onclick="showPage('resume')">Resume and skills</button>
+        <button class="nav-btn" onclick="showPage('journey')">My journey</button>
+        <button class="nav-btn" onclick="showPage('recommendations')">Recommendations</button>
+    </div>
+
+    <!-- ===== PROJECTS PAGE (Basketball Theme) ===== -->
+    <div id="projects" class="page-section projects-section active">
+        <!-- Filter buttons - modify tags as needed -->
+        <div class="filter-section">
+            <button class="filter-btn active" onclick="filterItems('projects', 'all')">All</button>
+            <button class="filter-btn" onclick="filterItems('projects', 'ML/AI')">ML/AI</button>
+            <button class="filter-btn" onclick="filterItems('projects', 'Frontend')">Frontend</button>
+            <button class="filter-btn" onclick="filterItems('projects', 'Backend')">Backend</button>
+            <button class="filter-btn" onclick="filterItems('projects', 'Computer Vision')">Computer Vision</button>
+            <button class="filter-btn" onclick="filterItems('projects', 'Health')">Health</button>
+            <button class="filter-btn" onclick="filterItems('projects', 'Sports')">Sports</button>
+        </div>
+
+        <div class="cards-grid" id="projects-grid">
+            <!-- SAMPLE PROJECT CARD - Duplicate and modify for your projects -->
+            <div class="card" data-tags="ML/AI,Sports,Python">
+                <div class="card-image">🏀</div>
+                <div class="card-content">
+                    <h3 class="card-title">Basketball Analytics AI</h3>
+                    <p class="card-description">Machine learning model that predicts player performance based on historical game data.</p>
+                    <div class="card-tags">
+                        <span class="tag">ML/AI</span>
+                        <span class="tag">Sports</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <a href="#" class="read-more">read more</a>
+                </div>
+            </div>
+
+            <!-- Add more project cards here following the same structure -->
+            <div class="card" data-tags="Frontend,JS,HTML/CSS">
+                <div class="card-image">💻</div>
+                <div class="card-content">
+                    <h3 class="card-title">Sample Frontend Project</h3>
+                    <p class="card-description">Description of your frontend project goes here.</p>
+                    <div class="card-tags">
+                        <span class="tag">Frontend</span>
+                        <span class="tag">JS</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                    <a href="#" class="read-more">read more</a>
+                </div>
+            </div>
+
+            <div class="card" data-tags="Backend,SQL,Python">
+                <div class="card-image">🗄️</div>
+                <div class="card-content">
+                    <h3 class="card-title">Database Management System</h3>
+                    <p class="card-description">Backend system for managing complex database operations.</p>
+                    <div class="card-tags">
+                        <span class="tag">Backend</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <a href="#" class="read-more">read more</a>
+                </div>
+            </div>
+
+            <!-- Copy this card structure for all your projects -->
+        </div>
+    </div>
+
+    <!-- ===== WORK EXPERIENCE PAGE (IBM Z Mainframe Theme) ===== -->
+    <div id="work" class="page-section work-section">
+        <div class="filter-section">
+            <button class="filter-btn active" onclick="filterItems('work', 'all')">All</button>
+            <button class="filter-btn" onclick="filterItems('work', 'IBM Z')">IBM Z</button>
+            <button class="filter-btn" onclick="filterItems('work', 'Systems')">Systems</button>
+            <button class="filter-btn" onclick="filterItems('work', 'Backend')">Backend</button>
+            <button class="filter-btn" onclick="filterItems('work', 'JAVA')">JAVA</button>
+            <button class="filter-btn" onclick="filterItems('work', 'Python')">Python</button>
+        </div>
+
+        <div class="cards-grid" id="work-grid">
+            <!-- SAMPLE WORK EXPERIENCE CARD -->
+            <div class="card" data-tags="IBM Z,Systems,JAVA">
+                <div class="card-image" style="background: linear-gradient(135deg, #1e3a5f 0%, #00d4ff 100%);">🖥️</div>
+                <div class="card-content">
+                    <h3 class="card-title">IBM Z Mainframe Developer</h3>
+                    <p class="card-description">Worked on enterprise-level mainframe systems, developing and maintaining critical business applications.</p>
+                    <div class="card-tags">
+                        <span class="tag">IBM Z</span>
+                        <span class="tag">Systems</span>
+                        <span class="tag">JAVA</span>
+                    </div>
+                    <a href="#" class="read-more">read more</a>
+                </div>
+            </div>
+
+            <!-- Add your work experiences here -->
+            <div class="card" data-tags="Backend,Python,SQL">
+                <div class="card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">⚙️</div>
+                <div class="card-content">
+                    <h3 class="card-title">Backend Software Engineer</h3>
+                    <p class="card-description">Developed scalable backend systems and APIs for web applications.</p>
+                    <div class="card-tags">
+                        <span class="tag">Backend</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                    <a href="#" class="read-more">read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== RESUME & SKILLS PAGE (Anime Theme) ===== -->
+    <div id="resume" class="page-section resume-section">
+        <div class="cards-grid" id="resume-grid">
+            <!-- RESUME/SKILLS CARDS -->
+            <div class="card">
+                <div class="card-image" style="background: linear-gradient(135deg, #ff6b9d 0%, #c06c84 100%);">📄</div>
+                <div class="card-content">
+                    <h3 class="card-title">Resume</h3>
+                    <p class="card-description">Download my full resume with detailed work history, education, and accomplishments.</p>
+                    <a href="#" class="read-more">download resume</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">💻</div>
+                <div class="card-content">
+                    <h3 class="card-title">Technical Skills</h3>
+                    <p class="card-description">Python, Java, C, JavaScript, SQL, React, Node.js, Machine Learning, Computer Vision</p>
+                    <div class="card-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">JAVA</span>
+                        <span class="tag">C</span>
+                        <span class="tag">JS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">🎓</div>
+                <div class="card-content">
+                    <h3 class="card-title">Education</h3>
+                    <p class="card-description">University at Buffalo - Computer Science<br>Expected Graduation: [Year]</p>
+                </div>
+            </div>
+
+            <!-- Add more skills/certifications cards as needed -->
+        </div>
+    </div>
+
+    <!-- ===== MY JOURNEY PAGE (Video Game Theme) ===== -->
+    <div id="journey" class="page-section journey-section">
+        <div class="cards-grid" id="journey-grid">
+            <!-- JOURNEY MILESTONE CARDS -->
+            <div class="card">
+                <div class="card-image" style="background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);">🎮</div>
+                <div class="card-content">
+                    <h3 class="card-title">Level 1: The Beginning</h3>
+                    <p class="card-description">Started my journey in computer science, discovering my passion for technology and problem-solving.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image" style="background: linear-gradient(135deg, #654ea3 0%, #eaafc8 100%);">⚔️</div>
+                <div class="card-content">
+                    <h3 class="card-title">Level 2: First Quest</h3>
+                    <p class="card-description">Completed my first major project and learned the fundamentals of software development.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">🏆</div>
+                <div class="card-content">
+                    <h3 class="card-title">Level 3: Boss Battle</h3>
+                    <p class="card-description">Overcame major challenges in my first internship and gained real-world experience.</p>
+                </div>
+            </div>
+
+            <!-- Add more journey milestones -->
+        </div>
+    </div>
+
+    <!-- ===== RECOMMENDATIONS PAGE (Fashion Theme) ===== -->
+    <div id="recommendations" class="page-section recommendations-section">
+        <div class="cards-grid" id="recommendations-grid">
+            <!-- RECOMMENDATION CARDS -->
+            <div class="card">
+                <div class="card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">👔</div>
+                <div class="card-content">
+                    <h3 class="card-title">John Doe</h3>
+                    <p class="card-description">"JT is an exceptional developer with a keen eye for detail and a passion for creating elegant solutions."</p>
+                    <p style="margin-top: 10px; font-weight: 600; color: #666;">- Senior Software Engineer, Tech Corp</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">✨</div>
+                <div class="card-content">
+                    <h3 class="card-title">Jane Smith</h3>
+                    <p class="card-description">"Working with JT was a pleasure. Their technical skills and collaborative approach made our project a success."</p>
+                    <p style="margin-top: 10px; font-weight: 600; color: #666;">- Project Manager, Innovation Labs</p>
+                </div>
+            </div>
+
+            <!-- Add more recommendations -->
+        </div>
+    </div>
+
+    <!-- ===== MORE ABOUT ME SECTION (Same on all pages) ===== -->
+    <div class="bottom-section">
+        <div class="about-container">
+            <h2>More About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <!-- EDIT THIS: Add your personal information here -->
+                    I am from Cameroon, and I study at the University at Buffalo. I'm passionate about technology, sports, and creating innovative solutions that make a difference. My journey in computer science has been driven by curiosity and a desire to continuously learn and grow.
+                    <br><br>
+                    When I'm not coding, you can find me [add your hobbies/interests here].
+                </div>
+                <div class="about-image">
+                    <!-- EDIT THIS: Add your photo here -->
+                    <img src="placeholder-for-your-photo.jpg" alt="JT" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== CONTACT FORM ===== -->
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <h3 class="form-title">Contact Form</h3>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Leave a message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // ===== PAGE NAVIGATION FUNCTION =====
+        // This function switches between different pages/sections
+        function showPage(pageName) {
+            // Hide all page sections
+            const sections = document.querySelectorAll('.page-section');
+            sections.forEach(section => section.classList.remove('active'));
+            
+            // Show the selected page
+            document.getElementById(pageName).classList.add('active');
+            
+            // Update navigation button styles
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Scroll to top of page
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // ===== FILTER FUNCTION =====
+        // This function filters cards based on selected tag
+        function filterItems(section, tag) {
+            // Get the grid container for the current section
+            const grid = document.getElementById(section + '-grid');
+            const cards = grid.querySelectorAll('.card');
+            
+            // Show/hide cards based on filter
+            cards.forEach(card => {
+                const tags = card.getAttribute('data-tags');
+                if (tag === 'all' || (tags && tags.includes(tag))) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Update filter button styles
+            const filterSection = grid.previousElementSibling;
+            const filterButtons = filterSection.querySelectorAll('.filter-btn');
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        // ===== FORM SUBMISSION HANDLER =====
+        // This handles the contact form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // EDIT THIS: Add your form submission logic here
+            // You can send this to an API, email service, etc.
+            console.log('Form submitted:', { name, email, message });
+            
+            // Show success message
+            alert('Thank you for your message! I will get back to you soon.');
+            
+            // Reset form
+            event.target.reset();
+        }
+
+        // ===== INITIALIZE =====
+        // Show projects page by default on load
+        window.addEventListener('load', () => {
+            document.getElementById('projects').classList.add('active');
+        });
+    </script>
+</body>
+</html>
