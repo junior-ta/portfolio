@@ -251,43 +251,30 @@
 
         <!-- ===== CONTACT FORM ===== -->
         <div class="contact-container">
-            <!-- <h2>Contact Me</h2>
-            <form class="contact-form" onsubmit="handleSubmit(event)">
-                <h3 class="form-title">Contact Form</h3>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Leave a message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form> -->
+        <h2>Contact Me</h2>
 
-            <h2>Contact Me</h2>
+        <form name="contact" method="POST" data-netlify="true" class="contact-form">
             <input type="hidden" name="form-name" value="contact">
-                <form name="contact" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact">
-                <h3 class="form-title">Contact Form</h3>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Leave a message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+
+            <h3 class="form-title">Contact Form</h3>
+
+            <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+            <label for="message">Leave a message</label>
+            <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
         </div>
     </div>
 
